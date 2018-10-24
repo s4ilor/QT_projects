@@ -9,10 +9,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     converter = new TempConverter(0, this);
 
-    ui->dialCelsius->setMinimum(0);
-    ui->dialFahrenheit->setMinimum(0);
-    ui->dialCelsius->setMaximum(100);
-    ui->dialFahrenheit->setMaximum(100);
+    ui->dialCelsius->setMinimum(-10100);
+    ui->dialFahrenheit->setMinimum(-14900);
+
+    ui->dialCelsius->setMaximum(10100);
+    ui->dialFahrenheit->setMaximum(18132);
 
     // CELSIUS
 
